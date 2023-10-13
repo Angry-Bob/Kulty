@@ -8,13 +8,18 @@
 
 
 <h3>ScreenShots</h3>
-<ul>
-    <li><img src="Screenshot 2023-10-12 at 8.57.04 PM.png"></li>
-    <li><img src="Screenshot 2023-10-12 at 8.57.51 PM.png"></li>
-    <li><img src="Screenshot 2023-10-12 at 8.57.23 PM.png"></li>
-    <li><img src="Screenshot 2023-10-12 at 8.58.04 PM.png"></li>
-    <li><img src="Screenshot 2023-10-12 at 8.58.50 PM.png"></li>
-</ul>
+
+<img src="Screenshot 2023-10-12 at 8.57.04 PM.png">
+
+<img src="Screenshot 2023-10-12 at 8.57.51 PM.png">
+
+<img src="Screenshot 2023-10-12 at 8.57.23 PM.png">
+
+<img src="Screenshot 2023-10-12 at 8.58.04 PM.png">
+
+<img src="Screenshot 2023-10-12 at 8.58.50 PM.png">
+
+
 
 
 
@@ -24,7 +29,6 @@
     <li>I want an app that will allow me to communicate by posting information</li>
     <li>I want an app that will allow me to set myself apart from the rest with its stylish design and exclusivity</li>
     <li>I want an app that will allow me to read information from other users that may or may not be catergorized</li>
-    <li></li>
 </ul>
 
 
