@@ -1,4 +1,4 @@
-<img src="Screenshot 2023-10-12 at 9.00.21 PM.png">
+<img src="assets/Screenshot 2023-10-12 at 9.00.21 PM.png">
 
 
 
@@ -9,15 +9,15 @@
 
 <h3>ScreenShots</h3>
 
-<img src="Screenshot 2023-10-12 at 8.57.04 PM.png">
+<img src="assets/Screenshot 2023-10-12 at 8.57.04 PM.png">
 
-<img src="Screenshot 2023-10-12 at 8.57.51 PM.png">
+<img src="assets/Screenshot 2023-10-12 at 8.57.51 PM.png">
 
-<img src="Screenshot 2023-10-12 at 8.57.23 PM.png">
+<img src="assets/Screenshot 2023-10-12 at 8.57.23 PM.png">
 
-<img src="Screenshot 2023-10-12 at 8.58.04 PM.png">
+<img src="assets/Screenshot 2023-10-12 at 8.58.04 PM.png">
 
-<img src="Screenshot 2023-10-12 at 8.58.50 PM.png">
+<img src="assets/Screenshot 2023-10-12 at 8.58.50 PM.png">
 
 
 
