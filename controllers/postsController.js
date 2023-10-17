@@ -12,9 +12,23 @@ const getAllPosts = async (req, res) => {
     }
 }
 
+const createPost = async (req, res) => {
+    try {
+        const posts = await new Post(req.body)
+        await posts.save()
+        return res.status(201).json({
+            posts
+        })
+
+        } catch (e) {
+            return res.status(500).send(e.message)
+        }
+    }
+
 
 
 
 module.exports = {
-    getAllPosts
+    getAllPosts,
+    createPost
 }

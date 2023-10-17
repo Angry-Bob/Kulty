@@ -14,8 +14,20 @@ const commentsController = require('./controllers/commentsController');
 
 
 
+
+
 app.use(logger('dev'))
 app.use(bodyParser.json())
+
+
+
+
+app.post('/users', usersController.createUser)
+app.delete('/users/:id', usersController.deleteUser)
+app.put('/users/:id', usersController.updateUser)
+
+
+
 
 app.get('/users', usersController.getAllUsers)
 app.get('/posts', postsController.getAllPosts)
