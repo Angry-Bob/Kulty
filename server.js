@@ -21,16 +21,21 @@ app.use(bodyParser.json())
 
 
 
-
+app.get('/users', usersController.getAllUsers)
 app.post('/users', usersController.createUser)
 app.delete('/users/:id', usersController.deleteUser)
 app.put('/users/:id', usersController.updateUser)
 
-
-
-
-app.get('/users', usersController.getAllUsers)
 app.get('/posts', postsController.getAllPosts)
-app.get('/comments', commentsController.getAllComments)
+app.post('/posts', postsController.createPost)
+app.delete('/posts/:id', postsController.deletePost)
+app.put('/posts/:id', postsController.updatePost)
 
+app.get('/comments', commentsController.getAllComments)
+app.post('/comments', commentsController.createComment)
+app.delete('/comments/:id', commentsController.deleteComment)
+app.put('/comments/:id', commentsController.updateComment)
+
+
+app.get('/comments', commentsController.getAllComments)
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))

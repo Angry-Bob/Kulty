@@ -1,8 +1,5 @@
 const { User } = require('../models');
 
-
-
-
 const getAllUsers = async (req, res) => {
     try {
         const users = await User.find()
@@ -48,7 +45,6 @@ const updateUser = async (req, res) => {
         return res.status(500).send(e.message)
     }
 }
-
 
 module.exports = {
     getAllUsers,
