@@ -3,6 +3,7 @@ const db = require('./db');
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const app = express();
+const cors = require('cors')
 
 const PORT = process.env.PORT || 3001;
 
@@ -10,8 +11,10 @@ const usersController = require('./controllers/usersController');
 const postsController = require('./controllers/postsController');
 const commentsController = require('./controllers/commentsController');
 
+app.use(cors())
 app.use(logger('dev'))
 app.use(bodyParser.json())
+app.use(express.urlencoded( { extended: true}))
 
 app.get('/users', usersController.getAllUsers)
 app.post('/users', usersController.createUser)

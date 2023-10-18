@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/582d61f6bf.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="navDiv">
         <nav id="nav">
             <ul>
-                <a href="home.html"><li>Home</li></a>
-                <a href="sign-up.html"><li>Sign-in/Up</li></a>
-                <a href="about.html"><li>About</li></a>
+                <a href="home.html"><li>Login!</li></a>
+                <a href="index.html"><li>Create!</li></a>
+                <a href="about.html"><li>News!</li></a>
             </ul>
         </nav>
     </div>
+</div>
+<div id="signUpForm">
+        <form>
+            <label class="label" for="user_name"><i class="fa-solid fa-user"></i></label>
+
+            <input type="text" placeholder="Username" class="formDetails" id="userName" name="user_name">
+
+            <label class="label" for="password"><i class="fa-solid fa-user-secret"></i></label>
+
+            <input type="password" placeholder="Password" class="formDetails" id="password" name="password">
+
+            <button type="submit" id="submitBtn">&#10003;</button>
+        </form>
+</div>
 </body>
 </html>
