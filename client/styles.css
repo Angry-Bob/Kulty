@@ -6,7 +6,8 @@ body {
 }
 ul {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
+    padding: 0;    
 }
 li {
     text-decoration: none;
@@ -47,6 +48,12 @@ a:hover {
     width: 300px;
     top: 200px;
 }
+
+dialog {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
 form {
     display: flex;
     align-items: center;
@@ -74,7 +81,13 @@ form {
 #submitBtn:hover {
     background-color: #710071;
 }
-
-.label {
+#postBox {
+    position: fixed;
+    top: 100px;
+}
+#postDisplay {
+    border: 1px solid black;
+    height: 300px;
+    width: 90vw;
 
 }
