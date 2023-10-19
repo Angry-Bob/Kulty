@@ -23,8 +23,8 @@ const main = async () => {
         },
         {
             author: users[0]._id,
-            title: "Bathroom?",
-            text_content: 'I have to go poop! Can I use this APP!',
+            title: "Im old?",
+            text_content: 'Im in a nursing home! Can I use this APP?',
         }
     ]
 
