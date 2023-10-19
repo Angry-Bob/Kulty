@@ -1,3 +1,6 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
 body {
     box-sizing: border-box;
     height: 100vh;
@@ -87,7 +90,11 @@ form {
 }
 #postDisplay {
     border: 1px solid black;
-    height: 300px;
+    height: 400px;
     width: 90vw;
-
+    overflow: scroll;
+}
+#delete {
+    border: none;
+    margin-left: 5px;
 }

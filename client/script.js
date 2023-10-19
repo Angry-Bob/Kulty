@@ -31,21 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
     async function getAllPosts() {
         try {
             const response = await axios.get(`${base_Url}`)
-
+            console.log(response)
            if (response.data.length > 0) {
                 postsContent.innerHTML = ''
                 response.data.forEach(posts  => {
                     postsContent.innerHTML +=
                         `
-                        <h1>${posts.user_name.id}</h1>
-                        <p>${posts.title}</p>
+                        <h4>${posts.author.user_name}</h4>
+                        <p><b>Title:</b> ${posts.title}</p>
                         <p>${posts.text_content}</p>
+                        <button id="delete">delete</button>
+                        <hr>
                         `
                 });
             }else {
-                employeesContent.innerHTML = "No posts found"
+                const postsContent = document.getElementById('postDisplay')
+                postsContent.innerHTML = "No posts found"
             }
         } catch (error) {
+            const postsContent = document.getElementById('postDisplay')
             console.error("Error:", error);
             postsContent.innerHTML = "Error: Item was not found in our database! Please re-enter a valid item.";
     }

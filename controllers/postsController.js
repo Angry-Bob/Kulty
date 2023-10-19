@@ -1,11 +1,9 @@
-const { Post } = require('../models');
-
-
-
+const { Post, User, Comment } = require('../models');
 
 const getAllPosts = async (req, res) => {
     try {
-        const posts = await Post.find()
+        const posts = await Post.find().populate('author')
+
         res.json(posts)
     } catch (error) {
         return res.status(500).send(error.message);

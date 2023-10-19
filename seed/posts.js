@@ -11,18 +11,18 @@ const main = async () => {
 
     const posts = [
         {
-            user_name: users[2]._id,
+            author: users[2]._id,
             title: "It's good.",
             text_content: 'I really like this APP!',
         },
         {
-            user_name: users[1]._id,
+            author: users[1]._id,
             title: "Ehh, I dont know.",
             text_content: "I really wanna like this APP, but it's kind of awful!",
 
         },
         {
-            user_name: users[0]._id,
+            author: users[0]._id,
             title: "Bathroom?",
             text_content: 'I have to go poop! Can I use this APP!',
         }
