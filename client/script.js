@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h4>${posts.author.user_name}</h4>
                         <p><b>Title:</b> ${posts.title}</p>
                         <p>${posts.text_content}</p>
-                        <button id="delete">delete</button>
+                        <form method="POST" action="http://localhost:3001/posts/${posts._id}?_method=DELETE">
+                        <button type="submit" id="delete">delete</button>
+                        </form>
                         <hr>
                         `
                 });

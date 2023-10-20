@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/582d61f6bf.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
 </head>
@@ -25,10 +26,13 @@
         </div>
         <div id="postInput">
             <form method="POST" action="http://localhost:3001/posts">
+                <label for=""><i class="fa-solid fa-user"></i></label>
                 <input type="text" id="title" name="author" placeholder="Author">
+                <Label><i class="fa-solid fa-signs-post"></i></Label>
                 <input type="text" id="title" name="title" placeholder="Title">
+                <Label><i class="fa-solid fa-signs-post"></i></Label>
                 <input type="text" id="post" name="text_content" placeholder="Post">
-                <button type="submit">Submit</button>
+                <button type="submit" id="postBtn">&#10003;</button>
             </form>
         </div>
         <div>

@@ -14,9 +14,7 @@ const createPost = async (req, res) => {
     try {
         const posts = await new Post(req.body)
         await posts.save()
-        return res.status(201).json({
-            posts
-        })
+        return res.redirect('http://127.0.0.1:5500/client/about.html')
         } catch (e) {
             return res.status(500).send(e.message)
         }
